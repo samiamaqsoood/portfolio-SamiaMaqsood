@@ -1,0 +1,14 @@
+.bg-robo{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* hides overflow on smaller screens */
+    position: relative;
+}
+.robo canvas {
+    height: 100vh !important;
+    width: 100vw !important;
+    object-fit: cover;
+}
