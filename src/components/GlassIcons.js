@@ -13,7 +13,7 @@ const icons = [
   },
   {
     name: 'LinkedIn',
-    link: 'https://linkedin.com/in/',
+    link: 'https://www.linkedin.com/in/samia-maqsood-a30b6b358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     svg: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         {/* <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--> */}
@@ -31,7 +31,7 @@ const icons = [
   },
   {
     name: 'Email',
-    link: 'mailto : www.samiamaqsoood@email.com',
+    link: 'mailto : samiamaqsoood@email.com',
     svg:(
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             {/* <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--> */}
