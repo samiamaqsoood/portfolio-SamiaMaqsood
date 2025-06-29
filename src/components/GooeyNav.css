@@ -4,7 +4,6 @@
 
 .gooey-nav-container {
   position: relative;
-  right: 0;
 }
 
 .gooey-nav-container nav {
@@ -196,4 +195,19 @@
     transform: scale(0);
     opacity: 0;
   }
+}
+@media screen and (max-width: 768px) {
+.gooey-nav-container nav  ul {
+  flex-direction: column;
+  align-items: flex-end;
+    gap: 0;
+    font-size: 0.7rem;
+}
+.gooey-nav-container .effect.text.active {
+    font-size: 0.7rem;
+  
+}
+.gooey-nav-container nav  ul li {
+  align-content: flex-end;
+}
 }
