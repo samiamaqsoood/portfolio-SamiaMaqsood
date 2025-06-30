@@ -4,7 +4,7 @@ import GooeyNav from './GooeyNav'
 // update with your own items
 const items = [
   { label: "Home", href: "#" },
-  { label: "About", href: "#" },
+  { label: "About", href: "/AboutCall.js" },
   { label: "Projects", href: "#" },
   { label: "Experience", href: "#" },
   { label: "Contact", href: "#" },
@@ -25,7 +25,7 @@ export default function GooeyNavCall() {
     timeVariance={300}
     colors={[1, 2, 3, 1, 2, 3, 1, 4]}
   />
-{/* </div> */}
-    </div>
+</div>
+    // </div>
   )
 }
