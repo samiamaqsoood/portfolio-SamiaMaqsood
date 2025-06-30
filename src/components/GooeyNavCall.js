@@ -13,8 +13,8 @@ const items = [
 
 export default function GooeyNavCall() {
   return (
-    <div className='NavContiner' style={{position: 'absolute',right:0,top:0,marginTop:'10px'}}>
-      <div style={{ height: '600px', position: 'relative' }}>
+    <div className='NavContiner' style={{position: 'absolute',right:0,top:0,marginTop:'10px', zIndex:9}}>
+      {/* <div style={{ height: '600px', position: 'relative' }}> */}
   <GooeyNav
     items={items}
     particleCount={15}
@@ -25,7 +25,7 @@ export default function GooeyNavCall() {
     timeVariance={300}
     colors={[1, 2, 3, 1, 2, 3, 1, 4]}
   />
-</div>
+{/* </div> */}
     </div>
   )
 }

@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home'
 import GlassIcons from './components/GlassIcons';
 import GooeyNavCall from './components/GooeyNavCall';
+import HomeTextCall from './components/HomeTextCall';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <GlassIcons />
       <GooeyNavCall />
+      <HomeTextCall />
       
     </div>
   );

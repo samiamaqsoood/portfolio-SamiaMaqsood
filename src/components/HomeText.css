@@ -1,0 +1,57 @@
+.text-container{
+    position: absolute;
+    width: 80vw;
+    left: 15%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+.text-container1{
+    color: wheat;
+    font-size: large;
+    font-weight: bold;
+
+
+}
+.text-container2{
+    color: rgb(185, 42, 210) !important;
+    font-size: xx-large;
+    font-weight: 900;
+
+}
+.text-container3{
+    color: wheat;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 60%;
+    
+
+}
+.text-container4{
+    color: rgb(185, 42, 210) !important;
+    font-size: xx-large;
+    font-weight: 900;
+    margin-left: 60%;
+}
+@media screen and (max-width: 768px) {
+.text-container{
+    width: 85vw;
+    left: 8%;
+    top: 18%;
+}
+.text-container1, .text-container3{
+     font-size: small;
+    font-weight: bold;
+}
+.text-container2, .text-container4{
+     font-size: x-large;
+    font-weight: 700;
+}
+.text-container3{
+    margin-left: 65%;
+    margin-top: 70%;
+}
+}
