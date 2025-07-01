@@ -1,0 +1,18 @@
+.metext-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.metext-container1{
+    color: rgb(185, 42, 210);
+   font-weight: bold;
+   font-size: medium;
+} 
+.metext-container2{
+    color: white;
+   font-weight: bold;
+   font-size: larger;
+   line-height: 2rem;
+   font-family: sans-serif;
+} 

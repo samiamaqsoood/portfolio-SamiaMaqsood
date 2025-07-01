@@ -1,11 +1,10 @@
-
 import "./App.css";
 import Home from "./components/Home";
 import GlassIcons from "./components/GlassIcons";
 import GooeyNavCall from "./components/GooeyNavCall";
-// import About_ThreadCall from "./components/About_ThreadCall";
-// import AboutMeText from "./components/AboutMeText";
-// import ProfileCardCall from "./components/ProfileCardCall";
+import About_ThreadCall from "./components/About_ThreadCall";
+import AboutMeText from "./components/AboutMeText";
+import ProfileCardCall from "./components/ProfileCardCall";
 
 function App() {
   return (
@@ -15,8 +14,14 @@ function App() {
         <GlassIcons />
         <GooeyNavCall />
       </div>
-      <div className="page2" style={{ height: "100vh", width: "100%" }}>
-        hello im page 2
+      <div className="page2">
+        <div className="text-and-profileCard">
+          <AboutMeText />
+          <ProfileCardCall />
+        </div>
+        <div className="about-thread">
+        <About_ThreadCall />
+        </div>
       </div>
     </div>
   );

@@ -17,12 +17,29 @@ html, body, #root {
   /* background : linear-gradient(180deg, #000000 0%,#821590 50%, #000000 100%); */
 }
 .page2{
+  height: 100dvh;
+  width: 100dvw;
+  /* padding: 6%; */
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  justify-content: end;
-  align-items: end;
-  position: relative;
-  background-color: darkgray;
 
+}
+.text-and-profileCard{
+  width: 100dvw;
+  position: relative;
+  margin-top: 15dvh;
+  margin-left: 10dvw;
+  margin-right: 10dvw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5%;
+}
+.about-thread{
+  width: 100dvw;
+  height: 20dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
