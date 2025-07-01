@@ -55,3 +55,12 @@
     margin-top: 70%;
 }
 }
+
+/* for about page  */
+.about-pageLining{
+    line-height: 2rem;
+    color: white; 
+}
+.about-meText{
+    color: rgb(185, 42, 210);
+}
