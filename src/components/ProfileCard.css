@@ -496,3 +496,11 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .profile-card{
+    margin-right:40px ;
+  }
+  .pc-card{
+    height: 30svh;
+  }
+}

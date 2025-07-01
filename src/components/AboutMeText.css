@@ -16,3 +16,16 @@
    line-height: 2rem;
    font-family: sans-serif;
 } 
+@media screen and (max-width: 768px) {
+  .metext-container{
+    width: 80%;
+    
+}
+  .metext-container2{
+    color: white;
+   /* font-weight: bold; */
+   font-size: small;
+   line-height: 1.2rem;
+   font-family: sans-serif;
+} 
+}
