@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import "./GooeyNav.css";
+import { NavLink } from "react-router-dom";
 
 const GooeyNav = ({
   items,
@@ -173,9 +174,12 @@ const GooeyNav = ({
               className={activeIndex === index ? "active" : ""}
               onClick={(e) => handleClick(e, index)}
             >
-              <a  style={{textDecoration:'none'}} href={item.href} onKeyDown={(e) => handleKeyDown(e, index)}>
+              {/* <a  style={{textDecoration:'none'}} href={item.href} onKeyDown={(e) => handleKeyDown(e, index)}>
                 {item.label}
-              </a>
+              </a> */}
+              <NavLink  to={item.to} style={{textDecoration:'none'}} onKeyDown={(e) => handleKeyDown(e, index)}>
+                {item.label}
+              </NavLink>
             </li>
           ))}
         </ul>

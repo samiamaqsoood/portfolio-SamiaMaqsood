@@ -1,29 +1,27 @@
 import "./App.css";
-import Home from "./components/Home";
+import { BrowserRouter,Routes, Route } from "react-router-dom";
 import GlassIcons from "./components/GlassIcons";
 import GooeyNavCall from "./components/GooeyNavCall";
-import About_ThreadCall from "./components/About_ThreadCall";
-import AboutMeText from "./components/AboutMeText";
-import ProfileCardCall from "./components/ProfileCardCall";
+import HomePage from "./pages/HomePage";
+import AboutPage from "pages/AboutPage";
+
 
 function App() {
   return (
+     <BrowserRouter>
     <div className="App">
-      <div className="page1">
-        <Home />
+       <GooeyNavCall />
         <GlassIcons />
-        <GooeyNavCall />
-      </div>
-      <div className="page2">
-        <div className="text-and-profileCard">
-          <AboutMeText />
-          <ProfileCardCall />
-        </div>
-        <div className="about-thread">
-        <About_ThreadCall />
-        </div>
-      </div>
+
+     
+       <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+
+        </Routes>
+     
     </div>
+    </BrowserRouter>
   );
 }
 
