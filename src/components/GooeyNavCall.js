@@ -1,15 +1,15 @@
 import React from 'react'
 import GooeyNav from './GooeyNav'
-// import { Link } from 'react-router-dom';
+import { href } from 'react-router-dom';
 
 // update with your own items
 const items = [
-  { label: "Home", to: "/" },
-  { label: "About", to: "/about" },
-  { label: "Projects", to: "/projects" },
-  { label: "Experience", to: "/experience" },
-  { label: "Contact", to: "/contact" },
-  { label: "Resume", to: "/resume" },
+  { label: "Home", href:"#" },
+  { label: "About", href:"#"},
+  { label: "Projects", href:"#" },
+  { label: "Experience", href:"#" },
+  { label: "Contact", href:"#" },
+  { label: "Resume",href:"#" },
 ];
 
 

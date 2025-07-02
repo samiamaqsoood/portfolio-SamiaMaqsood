@@ -1,6 +1,5 @@
 import { useRef, useEffect, useState } from "react";
 import "./GooeyNav.css";
-import { NavLink } from "react-router-dom";
 
 const GooeyNav = ({
   items,
@@ -16,6 +15,7 @@ const GooeyNav = ({
   const navRef = useRef(null);
   const filterRef = useRef(null);
   const textRef = useRef(null);
+
   const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
 
   const noise = (n = 1) => n / 2 - Math.random() * n;
@@ -126,6 +126,7 @@ const GooeyNav = ({
     if (filterRef.current) {
       makeParticles(filterRef.current);
     }
+    
   };
 
   const handleKeyDown = (e, index) => {
@@ -164,6 +165,8 @@ const GooeyNav = ({
     return () => resizeObserver.disconnect();
   }, [activeIndex]);
 
+
+
   return (
     <div className="gooey-nav-container" ref={containerRef}>
       <nav>
@@ -173,13 +176,12 @@ const GooeyNav = ({
               key={index}
               className={activeIndex === index ? "active" : ""}
               onClick={(e) => handleClick(e, index)}
+      
             >
-              {/* <a  style={{textDecoration:'none'}} href={item.href} onKeyDown={(e) => handleKeyDown(e, index)}>
+              <a  style={{textDecoration:'none',color:"white"}} href={item.href} onKeyDown={(e) => handleKeyDown(e, index)}>
                 {item.label}
-              </a> */}
-              <NavLink  to={item.to} style={{textDecoration:'none'}} onKeyDown={(e) => handleKeyDown(e, index)}>
-                {item.label}
-              </NavLink>
+              </a>
+
             </li>
           ))}
         </ul>
