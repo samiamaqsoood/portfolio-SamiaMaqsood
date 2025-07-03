@@ -21,7 +21,8 @@ html, body, #root {
   background-color: black;
   /* background : linear-gradient(180deg, #000000 0%,#821590 50%, #000000 100%); */
 }
-.page1{
+.page1,.page2,.page3
+{
   scroll-snap-align: start;
 }
 .page2{
@@ -30,8 +31,6 @@ html, body, #root {
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
-  scroll-snap-align: start;
-
 }
 .text-and-profileCard{
   width: 100dvw;
@@ -43,6 +42,16 @@ html, body, #root {
   flex-direction: row;
   justify-content: flex-start;
   gap: 5%;
+}
+
+.page3{
+  height: 100dvh;
+  width: 100dvw;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .text-and-profileCard{

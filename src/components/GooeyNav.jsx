@@ -165,7 +165,33 @@ const GooeyNav = ({
     return () => resizeObserver.disconnect();
   }, [activeIndex]);
 
+  //csocnqnciqniq
+  useEffect(() => {
+  const sectionIds = items.map(item => item.href.replace('#', ''));
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5, // adjust this to trigger earlier/later
+  };
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const index = sectionIds.indexOf(entry.target.id);
+        if (index !== -1 && index !== activeIndex) {
+          setActiveIndex(index);
+        }
+      }
+    });
+  }, observerOptions);
+
+  sectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+
+  return () => observer.disconnect();
+}, [items, activeIndex]);
 
   return (
     <div className="gooey-nav-container" ref={containerRef}>
