@@ -21,7 +21,7 @@ html, body, #root {
   background-color: black;
   /* background : linear-gradient(180deg, #000000 0%,#821590 50%, #000000 100%); */
 }
-.page1,.page2,.page3,.page4,.page6
+.page1,.page2,.page3,.page4,.page6,.page7
 {
   scroll-snap-align: start;
 }
@@ -68,8 +68,34 @@ html, body, #root {
   height: 100dvh;
   width: 100dvw;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: 10px;
+}
+.page7{
+  height: 100dvh;
+  width: 100dvw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5%;
+  padding: 10%;
+  padding-bottom: 5%;
+}
+.download-section{
+  color: rgb(185, 42, 210);
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
+}
+.download-btn{
+  width: 60%;
+
 }
 @media screen and (max-width: 768px) {
   .text-and-profileCard{

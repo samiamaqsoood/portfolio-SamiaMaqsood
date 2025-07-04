@@ -5,13 +5,16 @@ import GooeyNavCall from "./components/GooeyNavCall";
 import HomePage from "./pages/HomePage";
 import AboutPage from "pages/AboutPage";
 import ProjectsPage from "pages/ProjectsPage";
-import ResumePage from "pages/ResumePage";
+import ResumePage from "./pages/ResumePage";
+import ContactPage from "pages/ContactPage";
+import SplashCursor from './components/SplashCursorFolder/SplashCursor'
 
 
 function App() {
   return (
 
     <div className="App">
+      <SplashCursor />
        <GooeyNavCall />
         <GlassIcons />
 
@@ -31,9 +34,15 @@ function App() {
         <ExperiencePage />
         </section>
 
+        
         <section id="resume">
         <ResumePage />
         </section>
+
+        <section id="contact">
+        <ContactPage />
+        </section>
+
     
 
     </div>

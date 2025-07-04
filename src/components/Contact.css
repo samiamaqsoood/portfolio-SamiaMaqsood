@@ -1,0 +1,31 @@
+.info-box{
+    display:flex;
+    gap: 5%;
+    width: 90%;
+    justify-content: space-between;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+h4{
+    color: rgb(195, 191, 191);
+}
+.email-phone{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.design-develop{
+    font-size: large;
+}
+.design-develop span span{
+    color: rgb(185, 42, 210);
+    font-weight: bold;
+}
+.design-develop p{
+    font-size: medium;
+    font-weight: 100;
+}
