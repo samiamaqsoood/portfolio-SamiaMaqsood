@@ -21,7 +21,7 @@ function App() {
         <AboutPage />
         </section>
 
-        <section id="experience"> hello
+        <section id="experience">
         <ExperiencePage />
         </section>
     
