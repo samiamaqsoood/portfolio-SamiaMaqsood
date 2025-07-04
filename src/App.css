@@ -21,7 +21,7 @@ html, body, #root {
   background-color: black;
   /* background : linear-gradient(180deg, #000000 0%,#821590 50%, #000000 100%); */
 }
-.page1,.page2,.page3
+.page1,.page2,.page3,.page4,.page6
 {
   scroll-snap-align: start;
 }
@@ -43,8 +43,15 @@ html, body, #root {
   justify-content: flex-start;
   gap: 5%;
 }
-
 .page3{
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page4{
   height: 100dvh;
   width: 100dvw;
   padding-bottom: 0;
@@ -57,6 +64,13 @@ html, body, #root {
   display: grid;
   grid-template-columns: 1fr 1fr ;
 }
+.page6{
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .text-and-profileCard{
     flex-direction: column;
@@ -67,7 +81,7 @@ html, body, #root {
   .page2{
     height: auto;
   }
-  .page3{
+  .page4{
     flex-direction: column;
   }
 }

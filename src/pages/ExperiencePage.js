@@ -1,4 +1,3 @@
-import React, { createElement } from "react";
 import Experience from "../components/Experience";
 import "../App.css";
 import AnimatedContentImg from "../components/AnimatedContentImg";
@@ -25,7 +24,7 @@ const languages = [
 
 export default function ExperiencePage() {
   return (
-    <div className="page3">
+    <div className="page4">
       <Experience />
       <div className="languages-container">
       {languages.map(path => {
