@@ -1,3 +1,12 @@
+.chroma-swiper-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+  --x: 50%;
+  --y: 50%;
+  --r: 220px;
+}
+
 .chroma-grid {
   position: relative;
   width: 100%;
@@ -166,3 +175,17 @@
   opacity: 1;
   transition: opacity 0.25s ease;
 }
+.swiper-slide {
+  transition: transform 0.4s ease;
+  transform: scale(0.9);
+}
+
+.swiper-slide-active {
+  transform: scale(1.05);
+  z-index: 10;
+}.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  font-weight: bold;
+}
+
