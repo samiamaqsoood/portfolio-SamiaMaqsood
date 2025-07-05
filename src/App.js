@@ -8,6 +8,7 @@ import ProjectsPage from "pages/ProjectsPage";
 import ResumePage from "./pages/ResumePage";
 import ContactPage from "pages/ContactPage";
 import SplashCursor from './components/SplashCursorFolder/SplashCursor'
+import MyStack from "pages/MyStack";
 
 
 function App() {
@@ -34,7 +35,10 @@ function App() {
         <ExperiencePage />
         </section>
 
-        
+        <section id="experience" >
+        <MyStack />
+        </section>
+
         <section id="resume">
         <ResumePage />
         </section>

@@ -166,23 +166,56 @@ const GooeyNav = ({
   }, [activeIndex]);
 
   //csocnqnciqniq
-  useEffect(() => {
+//   useEffect(() => {
+//   const sectionIds = items.map(item => item.href.replace('#', ''));
+//   const observerOptions = {
+//     root: null,
+//     rootMargin: '0px',
+//     threshold: 0.1, // adjust this to trigger earlier/later
+//   };
+
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         const index = sectionIds.indexOf(entry.target.id);
+//         if (index !== -1 && index !== activeIndex) {
+//           setActiveIndex(index);
+//         }
+//       }
+//     });
+//   }, observerOptions);
+
+//   sectionIds.forEach(id => {
+//     const el = document.getElementById(id);
+//     if (el) observer.observe(el);
+//   });
+
+//   return () => observer.disconnect();
+// }, [items, activeIndex]);
+
+useEffect(() => {
   const sectionIds = items.map(item => item.href.replace('#', ''));
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5, // adjust this to trigger earlier/later
+    threshold: Array.from({ length: 101 }, (_, i) => i / 100), // from 0.00 to 1.00
   };
 
   const observer = new IntersectionObserver((entries) => {
+    let maxRatio = 0;
+    let mostVisibleIndex = activeIndex;
+
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const index = sectionIds.indexOf(entry.target.id);
-        if (index !== -1 && index !== activeIndex) {
-          setActiveIndex(index);
-        }
+      const index = sectionIds.indexOf(entry.target.id);
+      if (index !== -1 && entry.intersectionRatio > maxRatio) {
+        maxRatio = entry.intersectionRatio;
+        mostVisibleIndex = index;
       }
     });
+
+    if (mostVisibleIndex !== activeIndex) {
+      setActiveIndex(mostVisibleIndex);
+    }
   }, observerOptions);
 
   sectionIds.forEach(id => {
