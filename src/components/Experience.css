@@ -150,6 +150,9 @@
     border-right: none;
     border-left: 10px solid #fff;
   }
+  .timeline-container {
+    width: 90%;
+  }
 }
 
 /* Dark Mode */

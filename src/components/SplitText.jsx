@@ -25,6 +25,8 @@ const SplitText = ({
   useEffect(() => {
     const el = ref.current;
     if (!el || animationCompletedRef.current) return;
+    // if (!el) return;
+
 
     const absoluteLines = splitType === "lines";
     if (absoluteLines) el.style.position = "relative";
@@ -65,7 +67,7 @@ const SplitText = ({
         trigger: el,
         start,
         toggleActions: "play none none none",
-        once: true,
+        once: false,
       },
       smoothChildTiming: true,
       onComplete: () => {
@@ -94,6 +96,12 @@ const SplitText = ({
       gsap.killTweensOf(targets);
       splitter.revert();
     };
+  //   return () => {
+  // tl.scrollTrigger?.kill();
+  // tl.kill();
+  // splitter.revert();
+// };
+
   }, [
     text,
     delay,
@@ -125,3 +133,4 @@ const SplitText = ({
 };
 
 export default SplitText;
+

@@ -10,12 +10,27 @@ import ContactPage from "pages/ContactPage";
 import SplashCursor from './components/SplashCursorFolder/SplashCursor'
 import MyStack from "pages/MyStack";
 
+import { useState, useEffect } from "react";
 
 function App() {
+  
+const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // You can adjust breakpoint
+    };
+
+    checkMobile(); // initial check
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   return (
 
     <div className="App">
-      <SplashCursor />
+       {!isMobile && <SplashCursor />}
+      {/* <SplashCursor /> */}
        <GooeyNavCall />
         <GlassIcons />
 

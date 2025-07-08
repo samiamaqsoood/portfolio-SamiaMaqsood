@@ -4,10 +4,24 @@ import Resume from '../components/Resume'
 import StarBorder from '../components/StarBorderFolder/StarBorder.jsx'
 import SplitText from '../components/SplitText'
 
+import { useState, useEffect } from "react";
+
 export default function ResumePage() {
+  const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth <= 768); // You can adjust breakpoint
+      };
+  
+      checkMobile(); // initial check
+      window.addEventListener("resize", checkMobile);
+  
+      return () => window.removeEventListener("resize", checkMobile);
+    }, []);
   return (
     <div className='page6'>
-      <Resume />
+      {!isMobile && <Resume />}
       <div className='download-section'>
          <SplitText
                         text='Click the button below to Download .pdf file!'

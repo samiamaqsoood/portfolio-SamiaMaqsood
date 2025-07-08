@@ -58,6 +58,7 @@ html, body, #root {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .languages-container{
   width: 30%;
@@ -136,7 +137,27 @@ html, body, #root {
   }
   .page4{
     flex-direction: column;
+    height: auto;
   }
+  .page6{
+    flex-direction: column;
+    /* height: auto; */
+  }
+  .page1,.page2,.page3,.page4,.page5,.page6,.page7
+{
+  scroll-snap-align: none;
+}
+.download-section{
+  font-weight: bold;
+  font-size: xx-large;
+  height: 90%;
+  width: 90%;
+  gap: 15px;
+}
+.page7{
+  height: auto;
+  margin-left: 10px;
+}
 }
 .about-thread{
   width: 100dvw;

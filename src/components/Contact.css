@@ -5,6 +5,7 @@
     justify-content: flex-end;
     gap: 5%;
     padding-left: 5%;
+    /* overflow: hidden; */
     /* padding: 15%; */
 
 }
@@ -40,11 +41,23 @@
     font-size: medium;
     font-weight: 100;
 }
-.balls{
+/* .balls{
     height: 40%;
     width: 100%;
-}
-/* .balls:first-child{
-    height: 100%;
-    width: 100%;
 } */
+@media screen and (max-width: 768px) {
+    .contact-details{
+        margin-left: 5px;
+    }
+       .info-box{
+        flex-direction: column;
+        gap: 20px;
+        
+
+       }
+       .design-develop p{
+    font-size: small;
+    /* background-color: grey; */
+
+}
+}

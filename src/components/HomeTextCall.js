@@ -36,8 +36,8 @@ export default function HomeTextCall() {
                     />
                 </div>
             )}
-
-             {step >= 2 && (
+            
+  {step >= 1 && (
                 <div className="text-container2">
                     <SplitText
                         text="Samia Maqsood!"
@@ -52,12 +52,11 @@ export default function HomeTextCall() {
                         rootMargin="-100px"
                         textAlign="center"
                         // onLetterAnimationComplete={handleAnimationComplete}
-                        onLetterAnimationComplete={handleNextStep}
+                        // onLetterAnimationComplete={handleNextStep}
                     />
                 </div>
-             )}
-
-             {step >= 3 && (
+  )}
+             {step >= 2 && (
 
                 <div className="text-container3">
                     <SplitText
@@ -73,11 +72,11 @@ export default function HomeTextCall() {
                         rootMargin="-100px"
                         textAlign="center"
                         // onLetterAnimationComplete={handleAnimationComplete}
-                        onLetterAnimationComplete={handleNextStep}
+                        // onLetterAnimationComplete={handleNextStep}
                     />
                 </div>
              )}
-             {step >= 4 && (
+             {step >= 2 && (
                 <div className="text-container4">
                     <SplitText
                         text="Full-Stack Developer."
@@ -94,8 +93,7 @@ export default function HomeTextCall() {
                         onLetterAnimationComplete={handleAnimationComplete}
                     />
                 </div>
-             )}
-
+)}
 
         </div>
     );
