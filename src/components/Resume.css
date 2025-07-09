@@ -4,9 +4,9 @@
     padding: 25px;
     font-size: small;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .resume-container{
         height: 90%;
         width: 80%;
     }
-}
+} */
