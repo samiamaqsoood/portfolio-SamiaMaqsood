@@ -11,6 +11,7 @@ import SplashCursor from './components/SplashCursorFolder/SplashCursor'
 import MyStack from "pages/MyStack";
 
 import { useState, useEffect } from "react";
+import Menubtn from "./components/Menubtn";
 
 function App() {
   
@@ -31,7 +32,8 @@ const [isMobile, setIsMobile] = useState(false);
     <div className="App">
        {!isMobile && <SplashCursor />}
       {/* <SplashCursor /> */}
-       <GooeyNavCall />
+       {!isMobile && <GooeyNavCall />}
+         {!isMobile && <Menubtn />}
         <GlassIcons />
 
         <section id="home" >
